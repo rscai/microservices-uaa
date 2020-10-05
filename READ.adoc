@@ -1,0 +1,13 @@
+= Cloud Foundry UAA Server
+
+== Build Docker Image
+
+[source, bash]
+....
+docker build --tag uaa:<tag> .
+....
+
+[source, bash]
+....
+docker run -p 9103:8090 --name=uaa uaa:<tag>
+....
